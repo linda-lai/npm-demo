@@ -6,7 +6,7 @@ mkdir [folder_name]         // create new directory for project
 cd [folder_name]            // change directory into new folder
 npm init                    // to create new package.json file
 npm init --yes              // to use default
-npm install mongoose        // creates node_modules
+npm install [mongoose]      // installs node packet, creates node_modules folder
 npm install                 // to install all dependencies
 ```
 
@@ -58,10 +58,14 @@ node_modules/
 
 For dependencies listed in the package.json file, the `^` or `~` signifies to npm to download which version of mongoose to use.
 ```json
+    // Match by version, patch or exact
   "dependencies": {
-    "mongoose": "^5.3.15", // or 5.x.x
-    "mongoose": "~5.3.15", // or 5.3.x
-    "mongoose": "5.3.15" // or only 5.3.15
+    // or 5.x.x
+    "mongoose": "^5.3.15",
+    // or 5.3.x
+    "mongoose": "~5.3.15",
+    // or only 5.3.15
+    "mongoose": "5.3.15"
   }
 ```
 
@@ -99,7 +103,7 @@ npm uninstall moongoose
 npm un moongoose
 ```
 
-To install global package:
+To install global package (*caution*):
 ``
 sudo npm install -g npm
 ``
@@ -124,9 +128,9 @@ npm adduser                     // to create new npm account
 npm login                       // username, password and email
 npm publish                     // choose a unique package name
 ```
+Voila! It is listed in the npm registry.
 
-Create a new project:
-
+To install the new node, create a new project folder:
 ```
 mkdir [folder_name]             // create new directory for project
 cd [folder_name]                // change directory into new folder
@@ -134,7 +138,7 @@ npm init --yes                  // initialise a new package.json
 npm i publish-node-package      // to install the custom npm
 ```
 
-In that new project, require it in:
+In that new project `index.js`, require it in:
 ```js
 const exampleNpm = require('publish-node-package');
 ```
