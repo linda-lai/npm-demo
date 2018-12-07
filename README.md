@@ -57,7 +57,7 @@ node_modules/
 ```
 
 For dependencies listed in the package.json file, the `^` or `~` signifies to npm to download which version of mongoose to use.
-```json
+```js
     // Match by version, patch or exact
   "dependencies": {
     // or 5.x.x
