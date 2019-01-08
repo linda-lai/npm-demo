@@ -1,6 +1,11 @@
 # npm-demo
 Notes and practice installing and creating node packages with npm.
 
+|[![Linda Lai](contributors-linda-lai-70x70.jpg)](https://github.com/linda-lai) |
+|-----------|
+| Linda Lai |
+
+
 ```
 mkdir [folder_name]         // create new directory for project
 cd [folder_name]            // change directory into new folder
